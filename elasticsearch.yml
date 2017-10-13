@@ -1,0 +1,4 @@
+node.local: true
+discovery.zen.ping.multicast: false
+index.number_of_shards: 1
+index.number_of_replicas: 0
