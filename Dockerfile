@@ -16,7 +16,7 @@ ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 ADD nginx_default /etc/nginx/sites-enabled/default
 ADD elasticsearch-customisations-0.0.1-SNAPSHOT.jar /usr/share/elasticsearch/lib/elasticsearch-customisations-0.0.1-SNAPSHOT.jar
-ADD elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
+ADD elasticsearch.yml /usr/share/elasticsearch/config/elasticsearch.yml
 
 EXPOSE 9200
 CMD ["/usr/bin/supervisord"]
